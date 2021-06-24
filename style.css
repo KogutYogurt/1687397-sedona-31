@@ -5,11 +5,15 @@
   --basic-neutral: #e5e5e5;
   --basic-extra-light: #f8f5f2;
   --basic-white: #ffffff;
-
+  
   --special1: #766357;
   --special-marin: #81B3D2;
   --somehow-grey:#EEEEEE;
-  --special-border:#E5E5E5;
+  --search-color:#604E43;
+  --search-color2:#503E33;
+  --appointment1:#F2F2F2;
+  --appointment2:#EBEBEB;
+
   
 }
 
@@ -27,7 +31,7 @@
 }
 
 .site-navigation a{
-text-decoration: none;
+  text-decoration: none;
 }
 
 img {
@@ -41,7 +45,7 @@ img {
 }
 
 .main-navigation-wrapper {
-  background-color: var(--basic-wtite);
+  background-color: var(--basic-white);
 }
 .site-navigation {
   list-style: none;
@@ -66,8 +70,8 @@ img {
 }
 
 .introduction p{
- font-weight:400;
- line-height: 26px;
+  font-weight:400;
+  line-height: 26px;
 }
 
 .reasons {
@@ -86,7 +90,7 @@ img {
 
 .reasons-item-blue {
   background-color: var(--special-marin);
-  color: white;
+  color: var(--basic-white);
 }
 
 .reasons-inside h3{
@@ -95,19 +99,18 @@ img {
 }
 
 .reasons-inside {
- background-color: white;
- color: black;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .reasons-item-grey h3 {
   background-color: var(--somehow-grey);
- color: black;
+  color: var(--basic-black);
 }
 .reasons-item-grey {
   background-color: var(--somehow-grey);
- color: black;
+  color: var(--basic-black);
 }
-
 
 .appointment h2{
   font-size:30px;
@@ -125,62 +128,74 @@ img {
 }
 
 .button-search{
- background-color: #766357;
- color: white;
- font-size: 21px;
- line-height: 26px;
- height: 86px;
- width:568px;
+  background-color: var(--special1);
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  height: 86px;
+  width:568px;
+  text-transform: uppercase;
+  border: none;
 }
 
 .button-search:hover{
-  background-color: #604E43;
+  background-color: var(--search-color);
 }
 
 .button-search:focus{
-  background-color: #503E33;
-  opacity: 0.9;
+  background-color: rgba(80, 62, 51, 1);
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .button{
-background-color: var(--special-marin);
- color: white;
- font-size: 21px;
- line-height: 26px;
- height: 58px;
- width:458px;
- }
+  background-color: var(--special-marin);
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  height: 58px;
+  width:458px;
+  border: none;
+  text-transform: uppercase;
+}
 
- .appointment-item input[type="date"],
- .appointment-item input[type="text"] {
-   font: inherit;
-   color: var(--basic-black);
-   text-transform: uppercase;
-   background-color: #F2F2F2;
-   border: none;
- }
+.button:hover{
+  background-color: #669EC0;
+}
 
- 
-.appointment-item input:hover {
-  background-color: #EBEBEB;
+.button:focus{
+  background-color: #5496BD;
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.appointment-item input[type="date"],
+.appointment-item input[type="text"] {
+  font: inherit;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--appointment1);
   border: none;
 }
- 
- .appointment-item input:focus {
-   background-color: var(--basic-white);
-   
- }
 
+.appointment-item input:hover {
+  background-color: var(--appointment2);
+  border: none;
+}
 
+.appointment-item input:focus {
+  background-color: var(--basic-white);
+  outline: 2px solid rgba(0, 0, 0, 0.1)
+}
 
-
- .button:hover{
+.button:hover{
   background-color: #669EC0;
 }
 
 .button:focus{
   background-color: #5496BD;
 }
+
 
 .main-footer {
   color: var(--basic-black);
@@ -190,8 +205,8 @@ background-color: var(--special-marin);
 }
 
 .contacts-phone{
-list-style: none;
-color:black;
-text-decoration: none;
+  list-style: none;
+  color:var(--basic-black);
+  text-decoration: none;
 }
 
