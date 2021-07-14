@@ -26,9 +26,28 @@
   color: var(--basic-black);
   text-transform: uppercase;
   text-align: center;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
 }
 
 /* Main header */
+
+.main-header {
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
 
 .inner-page .main-header {
   background-color: var(--basic-white);
@@ -39,6 +58,8 @@
   background-color: var(--special-marin);
   background-image: url("img/background_catalog.jpg");
   background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Настройки */
@@ -196,20 +217,43 @@
 
 /* Главная страница */
 
-img {
-  max-width: 100%;
-  height: auto;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header-logo {
+  order: 0;
+  justify-self: center;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-header-bar {
+  background-color: var(--basic-white);
 }
 
 .main-navigation {
+  display: grid;
   color: var(--basic-white);
   background-color: transparent;
 }
 
 .main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
   background-color: var(--basic-white);
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
+
 .site-navigation {
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
   list-style: none;
 }
 
@@ -263,6 +307,7 @@ img {
 .reasons-inside {
   background-color: var(--basic-white);
   color: var(--basic-black);
+  list-style: none;
 }
 
 .reasons-item-grey h3 {
@@ -358,12 +403,17 @@ img {
   background-color: #5496BD;
 }
 
+.social-list{
+  list-style: none;
+}
+
 
 .main-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: 0 0;
-  background-repeat: repeat;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .contacts-phone{
