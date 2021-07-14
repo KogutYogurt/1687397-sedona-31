@@ -236,6 +236,7 @@ img {
 
 .main-navigation {
   display: grid;
+  justify-self: center;
   color: var(--basic-white);
   background-color: transparent;
 }
@@ -282,9 +283,12 @@ img {
 
 .reasons {
   font-weight:400;
+  margin-bottom: 80px;
 }
 
 .reasons-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -295,8 +299,12 @@ img {
 }
 
 .reasons-item-blue {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   background-color: var(--special-marin);
   color: var(--basic-white);
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
 }
 
 .reasons-inside h3{
@@ -305,9 +313,14 @@ img {
 }
 
 .reasons-inside {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--basic-white);
   color: var(--basic-black);
   list-style: none;
+  outline: 5px solid rgba(20, 50, 200 , 0.6);
+  outline-offset: -5px;
+  column-gap: 20px;
 }
 
 .reasons-item-grey h3 {
@@ -315,8 +328,12 @@ img {
   color: var(--basic-black);
 }
 .reasons-item-grey {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--somehow-grey);
   color: var(--basic-black);
+  outline: 5px solid rgba(0, 0, 20, 0.3);
+  outline-offset: -5px;
 }
 
 .appointment h2{
