@@ -19,10 +19,10 @@
       <div class="main-header-bar">
       <div class="main-navigation-wrapper">
           <ul class="site-navigation">
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="photovideo.html">Фото и Видео</a></li>
-            <li><a href="map.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li class="left"><a href="blank.html">Информация</a></li>
+            <li class="left"><a href="photovideo.html">Фото и Видео</a></li>
+            <li class="right"><a href="map.html">Карта штата</a></li>
+            <li class="right"><a href="catalog.html">Гостиницы</a></li>
           </ul>
       </div>
      </div>
@@ -33,8 +33,13 @@
     <h1>СЕДОНА</h1>
     
     <section class="introduction">
-      <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+      <h2>Приветствие</h2>
       <img src="img/Group1.svg" width="457" height="336" alt="Большой логотип с Приветствием и вводным описанием курорта Седона">
+      
+    </section>
+
+    <section>
+      <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     
@@ -42,62 +47,77 @@
       <h2>Чем можем похвастаться?</h2>
       <ul class="reasons-list">
         <li class="reasons-item-blue">
+          <div>
           <h3>Настоящий городок</h3>
           <p>-№1-</p>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <a href="#"> <img src="https://via.placeholder.com/800x256"  alt="Размытая картинка">
-          </a>
+        </div>
+          <div class="picture-house"><img src="img/house.jpg" width="800" height="256" alt="Размытая картинка">
+          </div>
           
           
-          <ul>
+          <ul class="style">
             <li class="reasons-inside">
+              <div class="style-1">
               <h3>Жилье</h3>
               <a href="#">
                 <img src="https://via.placeholder.com/75x72" alt="Домик icon-1">
               </a>
               <p class="features-2">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
             </li>
             <li class="reasons-inside">
+              <div class="style-2">
               <h3>ЕДА</h3>
               <a href="#">
                 <img src="https://via.placeholder.com/75x70" alt="Бургер icon-2"></a>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="reasons-inside">
-                <h3>Сувениры</h3>
+              </div>
+            </li>
+            <li class="reasons-inside">
+                <div class="style-3">
+                  <h3>Сувениры</h3>
                 <a href="#">
                   <img src="https://via.placeholder.com/64x77" alt="Подарок icon-3"></a>
                   <p>Не только китайского, но и местного производства!<br>
-                    <a href="#"><img src="https://via.placeholder.com/800x256" alt="Красный каньон">
-                    </a>
                   </p>
-                </li>
-              </ul>
-              
-              
+                </div>
+            </li>
+              </ul>             
             </li>
             
             
             <li class="reasons-item-blue">
-              <h3>Там есть мост дьявола</h3>
-              <p>-№2-</p>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <div class="picture-canyon">
+                <img src="img/canyon.jpg" width="800" height="256" alt="Красный каньон">
+              </div>
+              <div class="text-devil">
+                <h3>Там есть мост дьявола</h3>
+                <p>-№2-</p>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
             </li>
             
             <li class="reasons-item-grey">
+              <div class="item-1">
               <h3>Небольшая площадь</h3>
               <p>-№3-</p>
               <p>Все достопримечательностя находятся очень близко</p>
+              </div>
             </li>
             <li class="reasons-item-grey">
+              <div class="item-2">
               <h3>Красивая дорога</h3>
               <p>-№4-</p>
               <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+              </div>
             </li>
             <li class="reasons-item-grey">
+              <div class="item-3">
               <h3>Мало туристов</h3>
               <p>-№5-</p>
               <p>Большинство едет в гранд каньон и толпится там</p>
+              </div>
             </li>
             
             
@@ -106,7 +126,7 @@
         
         
         
-        <section>
+        <section class="information">
           <h2>Заинтересовались?</h2>
           <p class="appointment-first">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
@@ -153,24 +173,26 @@
           <ul class="social-list">
             <li>
               <a class="social-button" href="#">
-                <img src="img/twitter.svg" width="48" height="48" alt="Иконка Твиттер">
+                <img src="img/twitter.svg" width="46" height="48" alt="Иконка Твиттер">
                 Триттер</a>
             </li>
             <li>
-              <a class="social-button" href="#"><img src="img/facebook.svg" width="48" height="48" alt="Квадратная Иконка Фейсбук">
+              <a class="social-button" href="#"><img src="img/facebook.svg" width="46" height="48" alt="Квадратная Иконка Фейсбук">
                 Фейсбук</a>
             </li>
             <li>
-              <a class="social-button" href="#"><a class="social-button" href="#"><img src="img/youtube.svg" width="48" height="48" alt="Квадратная Иконка Ю-туб">
+              <a class="social-button" href="#"><img src="img/youtube.svg" width="46" height="48" alt="Квадратная Иконка Ю-туб">
                 Ю-туб</a>
             </li>
           </ul>
           
         </section>
+        <section class="footer-copyright">
         <p>
           Website by .
           <a class="button-footer" href="https://htmlacademy.ru"><img src="img/htmlogo.png" width="115" height="33" alt="Логотип HTML ACADEMY"></a>
         </p>
+      </section>
       </footer>
       
       
