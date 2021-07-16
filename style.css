@@ -304,18 +304,15 @@ img {
 
 .reasons-list {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.reasons-item-blue {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--special-marin);
-  color: var(--basic-white);
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
+.true-town {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .picture-house{
@@ -323,9 +320,19 @@ img {
   grid-row: 1/2;
 }
 
+.reasons-item-blue {
+  display: grid;
+  background-color: var(--special-marin);
+  color: var(--basic-white);
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
+
+
 .style{
   display: contents;
-  }
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .style-1 {
   grid-column: 1/2;
@@ -345,7 +352,6 @@ img {
 
 
 .reasons-item-blue h3 {
-  display: grid;
   font-size: 21px;
   line-height: 21px;
 }
@@ -358,8 +364,6 @@ img {
 }
 
 .reasons-inside {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--basic-white);
   color: var(--basic-black);
   list-style: none;
@@ -383,28 +387,28 @@ img {
   color: var(--basic-black);
 }
 .reasons-item-grey {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--somehow-grey);
   color: var(--basic-black);
   outline: 5px solid rgba(0, 0, 20, 0.3);
   outline-offset: -5px;
 }
 
+
 .item-1 {
   grid-column: 1/2;
-  grid-row: 1/5;
+  grid-row: 4/5;
 }
 
 .item-2 {
   grid-column: 2/3;
-  grid-row: 1/5;
+  grid-row: 4/5;
 }
 
 .item-3 {
   grid-column: 3/4;
-  grid-row: 1/5;
+  grid-row: 4/5;
 }
+
 
 .information{
   display: grid;
@@ -507,8 +511,6 @@ img {
   background-position: 0 0;
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
-  width: 1200px;
-  height: 120px;
   text-align: center;
   align-items: center;
 }
