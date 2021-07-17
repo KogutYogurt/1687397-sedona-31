@@ -32,6 +32,10 @@
   align-content: start;
 }
 
+.hidden{
+  display: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -44,9 +48,10 @@ img {
 /* Main header */
 
 .main-header {
-  margin-bottom: 70px;
+  margin-bottom: 0;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
+  padding: 10px;
 }
 
 .inner-page .main-header {
@@ -228,6 +233,7 @@ img {
   justify-self: center;
   outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px;
+  position: absolute
 }
 
 .main-header-bar {
@@ -239,6 +245,7 @@ img {
   justify-self: center;
   color: var(--basic-white);
   background-color: transparent;
+  position: relative;
 }
 
 .main-navigation-wrapper {
@@ -290,16 +297,23 @@ img {
 
 .introduction {
   background-image: url("img/background photo.jpg");
+  width: 1200px;
+  height: 509px;
+  margin: 0;
 }
 
-.introduction p{
-  font-weight:400;
+.Big-Sedona-logo {
+  padding: 80px;
+}
+
+.five-reasons{
+  font-size: 14px;
   line-height: 26px;
+  font-weight: 400;
 }
 
 .reasons {
   font-weight:400;
-  margin-bottom: 80px;
 }
 
 .reasons-list {
@@ -310,15 +324,35 @@ img {
   list-style: none;
 }
 
+.city{
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+.bridge{
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
 .true-town {
-  grid-column: 1/2;
-  grid-row: 1/2;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.header-town {
+  margin: 47px 139px 25px 139px;
+}
+
+.Sedona-for-tourists {
+  margin: 23px 48px 54px 49px;
 }
 
 .picture-house{
-  grid-column: 2/4;
-  grid-row: 1/2;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
 }
+
 
 .reasons-item-blue {
   display: grid;
@@ -327,6 +361,8 @@ img {
   outline: 5px solid rgba(0, 255, 255 , 0.3);
   outline-offset: -5px;
 }
+
+
 
 
 .style{
@@ -370,6 +406,7 @@ img {
   outline: 5px solid rgba(20, 50, 200 , 0.6);
   outline-offset: -5px;
   column-gap: 20px;
+  min-height: 330px;
 }
 
 .picture-canyon {
@@ -391,6 +428,7 @@ img {
   color: var(--basic-black);
   outline: 5px solid rgba(0, 0, 20, 0.3);
   outline-offset: -5px;
+  min-height: 256px;
 }
 
 
@@ -422,6 +460,8 @@ img {
   line-height: 24px;
   font-size: 14px;
   font-weight: 400;
+  padding: 30px;
+  margin: 0px;
 }
 
 .appointment-item {
@@ -439,6 +479,7 @@ img {
   width:568px;
   text-transform: uppercase;
   border: none;
+  margin-top: 20px;
 }
 
 .button-search:hover{
@@ -500,6 +541,7 @@ img {
 
 .social-list{
   list-style: none;
+  display: flex;
 }
 
 
@@ -507,12 +549,17 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: rgba(255, 255, 255, 0.7);
   background-position: 0 0;
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
   text-align: center;
   align-items: center;
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
+  max-width: 1200px;
+  justify-self: center;
 }
 
 .contacts {
